@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- TODO: add relative path to connect the scripts.js file -->
-    <script src="" defer></script>
-
-    <!-- TODO: add relative path to connect the layout.css file -->
-    <link rel="stylesheet" href="" />
-
-    <!-- TODO: add relative path to connect the image-list.css file -->
-    <link rel="stylesheet" href="" />
+    
+    <script src="/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/secondary/images-list.css" />
+    <link rel="stylesheet" href="/css/secondary/image-detail.css" />
+  
 
     <!-- Google custom fonts connection, don't edit these lines -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- End of Google custom fonts connection -->
 
     <title>Digital Art Gallery</title>
@@ -29,24 +26,17 @@
     <header>
       <nav>
         <ul class="top-nav" id="topNav">
-          <!-- TODO: add relative path to nature.html file -->
-          <li><a href="">Nature</a></li>
-
-          <!-- TODO: add relative path to space.html file -->
-          <li><a href="">Space</a></li>
-
-          <!-- TODO: add relative path to modern-design.html file -->
-          <li><a href="">Modern Design</a></li>
-
-          <!-- TODO: add relative path to plants.html file -->
-          <li><a href="">Plants</a></li>
+          <li><a href="../pages/nature.html" id="nav-nature">Nature</a></li>
+          <li><a href="../pages/space.html" id="nav-space">Space</a></li>
+          <li><a href="../pages/modern-design.html" id="nav-design">Modern Design</a></li>
+          <li><a href="../pages/plants.html" id="nav-plants">Plants</a></li>
         </ul>
         <button id="nav-toggler" aria-expanded="false">&#9783;</button>
       </nav>
     </header>
     <main>
-      <h1>Digital Art Gallery</h1>
-      <p>
+      <h1 id="gallery-title">Digital Art Gallery</h1>
+      <p id="gallery-description">
         Welcome to our digital art gallery, where creativity comes to life in
         pixel-perfect form. Immerse yourself in a virtual world filled with
         breathtaking masterpieces from talented artists around the globe. From
@@ -58,47 +48,47 @@
         and innovative techniques that push the boundaries of traditional art
         forms.
       </p>
-      <section class="gallery-items">
+
+
+      <section class="gallery-items" id="gallery-items">
+        
         <!-- ITEM 1 (Modern Design) -->
-        <article class="item">
-          <h2>Modern Design</h2>
-          <div class="img-wrapper">
-            <!-- TODO: add relative path to design-image.jpg file -->
-            <img src="" alt="Modern Design Image" />
+        <article class="item" id="modern-design">
+          <h2 id="modern-design-title">Modern Design</h2>
+          <div class="img-wrapper" id="modern-design-image-wrapper">
+            <img src="assets/gallery-images/modern-design/design-image.jpg" alt="Modern Design Image" id="modern-design-image"/>
           </div>
-          <!-- TODO: add relative path to modern-design.html file -->
-          <a href="" class="details">Modern Design Details</a>
-        </article>
+          <a href="../pages/modern-design.html" id="modern-design-details" class="details">Modern Design Details</a>
+          </article>
+
         <!-- ITEM 2 (Plants) -->
-        <article class="item">
-          <h2>Plants</h2>
-          <div class="img-wrapper">
-            <!-- TODO: add relative path to plant-image.jpg file -->
-            <img src="" alt="Plants image" />
+        <article class="item" id="plants">
+          <h2 id="plants-title">Plants</h2>
+          <div class="img-wrapper" id="plants-image-wrapper">
+            <img src="assets/gallery-images/plants/plant-image.jpg" alt="Plants Image" id="plants-image" />
           </div>
-          <!-- TODO: add relative path to plants.html file -->
-          <a href="" class="details">Plants Details</a>
+          <a href="../pages/plants.html" id="plants-details" class="details">Plants Details</a>
         </article>
+
         <!-- ITEM 3 (Space) -->
-        <article class="item">
-          <h2>Space</h2>
-          <div class="img-wrapper">
-            <!-- TODO: add relative path to space-image.jpg file -->
-            <img src="" alt="Space image" />
+        <article class="item" id="space">
+          <h2 id="space-title">Space</h2>
+          <div class="img-wrapper" id="space-image-wrapper">
+            <img src="assets/gallery-images/space/space-image.jpg" alt="Space Image" id="space-image" />
           </div>
-          <!-- TODO: add relative path to space.html file -->
-          <a href="" class="details">Space Details</a>
+          <a href="../pages/space.html" id="space-details" class="details"> Space Details</a>
         </article>
+
         <!-- ITEM 4 (Nature) -->
-        <article class="item">
-          <h2>Nature</h2>
-          <div class="img-wrapper">
-            <!-- TODO: add relative path to nature-image.jpg file -->
-            <img src="" alt="Nature Image" />
+        <article class="item" id="nature">
+          <h2 id="nature-title">Nature</h2>
+          <div class="img-wrapper" id="nature-image-wrapper">
+            <img src="assets/gallery-images/nature/nature-image.jpg" alt="Nature Image" id="nature-image" />
           </div>
-          <!-- TODO: add relative path to nature.html file -->
-          <a href="" class="details">Nature Details</a>
+          <a href="../pages/nature.html" id="nature-details" class="details">Nature Details</a>
         </article>
+        
+
       </section>
     </main>
     <footer></footer>
